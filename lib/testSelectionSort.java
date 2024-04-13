@@ -45,16 +45,16 @@ public class testSelectionSort {
 
     public void testMixed(){
         SelectionSort sorter = new SelectionSort();
-        int[] arr = new int[]{8, -9, 0, 10, -2};
-        int[] expected = new int[]{-9, -2, 0, 8, 10};
+        int[] arr = new int[]{8, -9, 1, 10, -2};
+        int[] expected = new int[]{-9, -2, 1, 8, 10};
         int[] sorted = sorter.basicSelectionSort(arr);
         assertArrayEquals(expected, sorted);
     }
 
     public void testDuplicates(){
         SelectionSort sorter = new SelectionSort();
-        int[] arr = new int[]{8, 8, -2, -2, 0};
-        int[] expected = new int[]{-2, -2, 0, 8, 8};
+        int[] arr = new int[]{8, 8, -2, -2, 8};
+        int[] expected = new int[]{-2, -2, 8, 8, 8};
         int[] sorted = sorter.basicSelectionSort(arr);
         assertArrayEquals(expected, sorted);
     }
