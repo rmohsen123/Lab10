@@ -37,8 +37,8 @@ public class testSelectionSort {
 
     public void testNegative(){
         SelectionSort sorter = new SelectionSort();
-        int[] arr = new int[]{-8, -9, -7, -10, -2};
-        int[] expected = new int[]{-10, -9, -8, -7, -2};
+        int[] arr = new int[]{-8, -9, -7, -10, -1};
+        int[] expected = new int[]{-10, -9, -8, -7, -1};
         int[] sorted = sorter.basicSelectionSort(arr);
         assertArrayEquals(expected, sorted);
     }
